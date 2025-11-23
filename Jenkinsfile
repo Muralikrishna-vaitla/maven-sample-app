@@ -20,7 +20,7 @@ pipeline {
 
     tools {
         maven 'Maven 3.9.10'
-         dockerTool 'Docker 28'
+         dockerTool 'Docker'
     }
 
     stages {

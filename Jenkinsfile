@@ -1,6 +1,7 @@
 pipeline {
-    agent jenkins-agent
-
+    agent {
+        label 'linux-agent'
+    }
     environment {
         MAVEN_HOME = tool 'Maven 3.9.12'
         PATH = "${MAVEN_HOME}/bin:${env.PATH}"

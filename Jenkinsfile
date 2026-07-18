@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        MAVEN_HOME = tool 'Maven 3.9.10'
+        MAVEN_HOME = tool 'Maven 3.9.12'
         PATH = "${MAVEN_HOME}/bin:${env.PATH}"
         DOCKERHUB_CREDENTIALS = 'dockerhub-credentials-id'  // Jenkins credentials ID for Docker Hub
         DOCKER_IMAGE = "muralikrishnavaitla/devops-sample-project"

@@ -1,6 +1,5 @@
 pipeline {
-    agent any
-    label linux-agent
+    agent jenkins-agent
 
     environment {
         MAVEN_HOME = tool 'Maven 3.9.12'

@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent linux-agent
 
     environment {
         MAVEN_HOME = tool 'Maven 3.9.12'
